@@ -1,5 +1,7 @@
 #!/bin/bash
 #menu
+clear
+termux-setup-storage
 banner() {
   figlet -f standard "bokep"
   figlet -f standard "no vpn"
@@ -8,6 +10,7 @@ banner() {
   }
   
 menu() {
+  termux-setup-storage
   echo -en "FITUR FITUR YANG TERSESDIA"
   echo -en """
   1. XNXX
@@ -15,22 +18,23 @@ menu() {
   3. PORN HUB:v
   4. BOKEP NURUL
   """
+  echo ""
   read -p "SILAHKAN PILIH YANG MANA UKHTI : " pilih
   if [[ $pilih == 1 ]]; then
   #efek loading
-  loanjing... xnxx
+  echo "loanjing... xnxx"
   xnxx
   elif [[ $pilih == 2 ]]; then
   #efek loading
-  loanjing... xvid
+  echo "loanjing... xvid"
   xvideos
   elif [[ $pilih == 3 ]]; then
   #efek loading
-  loanjing... porn hub
+  echo "loanjing... porn hub"
   pornhub
   elif [[ $pilih == 4 ]]; then
   #efek loading
-  loanjing... nurul
+  echo "loanjing... nurul"
   nurulh
   else
   echo -en "PILIH YANG ADA AJA ANJING JANGAN NAWAR!!!"
@@ -41,6 +45,8 @@ menu() {
   }
   
 xnxx() {
+  termux-setup-storage
+  clear
   echo -en "PILIH BOKEP MANA"
   echo -en """
   1. INDONESIA
@@ -49,6 +55,7 @@ xnxx() {
   4. CHINA
   5. DI RUMAH LU
   """
+  echo ""
   read -p "ROOT@BOKEP:~# " xnxx
   if [[ $xnxx == 1 ]]; then
   #ini isi loading nya bro biar keren:v
@@ -87,9 +94,11 @@ xnxx() {
   sleep 1.2 
   clear
   xnxx
+  fi
   }
 
 xvideos() {
+  termux-setup-storage
   echo -en "PILIH BOKEP MANA"
   echo -en """
   1. INDONESIA
@@ -98,6 +107,7 @@ xvideos() {
   4. CHINA
   5. DI RUMAH LU
   """
+  echo ""
   read -p "ROOT@BOKEP:~# " xvideos
   if [[ $xvideos == 1 ]]; then
   #ini isi loading nya bro biar keren:v
@@ -136,8 +146,10 @@ xvideos() {
   sleep 1.2 
   clear
   xvideos
+  fi
   }
 pornhub() {
+  termux-setup-storage
   echo -en "PILIH BOKEP MANA"
   echo -en """
   1. INDONESIA
@@ -146,6 +158,7 @@ pornhub() {
   4. CHINA (rusak)
   5. DI RUMAH LU (rusak)
   """
+  echo ""
   read -p "ROOT@BOKEP:~# " porn
   if [[ $porn == 1 ]]; then
   #ini isi loading nya bro biar keren:v
@@ -182,9 +195,11 @@ pornhub() {
   sleep 1.2 
   clear
   pornhub
+  fi
   }
   
 nurulh() {
+  termux-setup-storage
   echo -en "PILIH BOKEP MANA"
   echo -en """
   1. BAJU HITAM
@@ -193,6 +208,7 @@ nurulh() {
   4. BAJU WARNA WARNI
   5. GAK PAKE BAJU
   """
+  echo ""
   read -p "ROOT@BOKEP:~# " nurul
   if [[ $nurul == 1 ]]; then
   #ini isi loading nya bro biar keren:v
@@ -231,6 +247,7 @@ nurulh() {
   sleep 1.2 
   clear
   nurulh
+  fi
   }
 banner
 menu
